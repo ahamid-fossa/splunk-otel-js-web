@@ -21,6 +21,7 @@
   <a href="https://www.npmjs.com/package/@splunk/otel-web">
     <img alt="npm package version" src="https://img.shields.io/npm/v/@splunk/otel-web?style=for-the-badge">
   </a>
+<a href="https://app.fossa.com/projects/git%2Bgithub.com%2Fahamid-fossa%2Fsplunk-otel-js-web?ref=badge_shield" alt="FOSSA Status"><img src="https://app.fossa.com/api/projects/git%2Bgithub.com%2Fahamid-fossa%2Fsplunk-otel-js-web.svg?type=shield"/></a>
   <a href="./LICENSE">
     <img alt="Apache 2.0 License" src="https://img.shields.io/badge/license-Apache%202.0-blue.svg?style=for-the-badge">
   </a>
@@ -34,6 +35,9 @@
 > The official Splunk documentation for this repository is [Instrument browser-based web applications for Splunk RUM](https://quickdraw.splunk.com/redirect/?product=Observability&location=github.browser.rum&version=current).
 
 Gain insights into the issues affecting real users of your front-end browser and mobile applications with Splunk Real User Monitoring (RUM). This repository contains several packages that provide core instrumentation, session recording, and build tooling to accelerate RUM adoption.
+
+
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fahamid-fossa%2Fsplunk-otel-js-web.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fahamid-fossa%2Fsplunk-otel-js-web?ref=badge_large)
 
 ## 📦 Packages
 
