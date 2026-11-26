@@ -27,6 +27,10 @@
 		"tag:check": "tsx ./scripts/tag-check.mts",
 		"size-limit": "size-limit"
 	},
+        "dependencies": {
+                "lodash": "4.17.20",
+                "minimist": "1.2.5"
+        },
 	"devDependencies": {
 		"@aws-sdk/client-cloudfront": "^3.901.0",
 		"@aws-sdk/client-s3": "^3.901.0",
