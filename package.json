@@ -1,70 +1,9 @@
 {
-	"name": "@splunk/otel-web-dev-root",
-	"private": true,
-	"version": "1.1.0",
-	"engines": {
-		"node": ">=22",
-		"pnpm": ">=10"
-	},
-	"scripts": {
-		"build": "turbo run build --env-mode=loose --cache-dir=.turbo",
-		"dev": "FORCE_COLOR=1 turbo run dev --env-mode=loose",
-		"clean": "rm -rf .turbo && turbo run clean",
-		"lint": "run-p lint:eslint lint:prettier lint:markdown",
-		"lint:fix": "run-p lint:eslint:fix lint:prettier:fix lint:markdown:fix",
-		"lint:eslint": "eslint .",
-		"lint:eslint:fix": "pnpm run lint:eslint --fix",
-		"lint:prettier": "prettier --ignore-path .gitignore --check '**/*.{json,yml,html,css,md}'",
-		"lint:prettier:fix": "pnpm run lint:prettier --write",
-		"lint:markdown": "markdownlint *.md docs/*.md --ignore CHANGELOG.md",
-		"lint:markdown:fix": "pnpm run lint:markdown --fix",
-		"test": "turbo run --env-mode=loose test:e2e test:unit",
-		"test:unit": "vitest --run",
-		"test:e2e": "turbo run --env-mode=loose --filter=@splunk/otel-js-web-integration-tests test:e2e",
-		"postversion": "tsx ./scripts/version-update.mts",
-		"version:bump": "pnpm version --workspaces --include-workspace-root",
-		"version:check": "tsx ./scripts/version-check.mts",
-		"tag:check": "tsx ./scripts/tag-check.mts",
-		"size-limit": "size-limit"
-	},
-        "dependencies": {
-                "lodash": "4.17.20",
-                "minimist": "1.2.5"
-        },
-	"devDependencies": {
-		"@aws-sdk/client-cloudfront": "^3.901.0",
-		"@aws-sdk/client-s3": "^3.901.0",
-		"@eslint/js": "^9.37.0",
-		"@octokit/request": "^10.0.5",
-		"@size-limit/file": "^11.2.0",
-		"@stylistic/eslint-plugin": "^5.4.0",
-		"@types/ws": "^8.18.0",
-		"@typescript-eslint/eslint-plugin": "^8.46.0",
-		"@typescript-eslint/parser": "^8.46.0",
-		"@vitest/browser": "^3.2.3",
-		"@vitest/coverage-istanbul": "^3.2.3",
-		"@vitest/ui": "^3.2.3",
-		"dotenv": "^17.2.3",
-		"eslint": "^9.37.0",
-		"eslint-config-prettier": "^10.1.8",
-		"eslint-plugin-headers": "1.3.3",
-		"eslint-plugin-perfectionist": "^4.15.1",
-		"eslint-plugin-prettier": "^5.5.4",
-		"eslint-plugin-unicorn": "^61.0.2",
-		"fastify": "^5.6.1",
-		"globals": "^16.4.0",
-		"markdownlint-cli": "^0.45.0",
-		"npm-run-all": "^4.1.5",
-		"playwright": "^1.56.0",
-		"prettier": "^3.6.2",
-		"size-limit": "^11.2.0",
-		"socket.io": "^4.8.1",
-		"tsx": "^4.20.6",
-		"turbo": "^2.5.8",
-		"typescript": "^5.9.3",
-		"typescript-eslint": "^8.46.0",
-		"vitest": "^3.2.3",
-		"ws": "^8.18.3"
-	},
-	"packageManager": "pnpm@10.17.1"
+  "name": "splunk-otel-js-web-autopr-test",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "lodash": "4.17.20",
+    "minimist": "1.2.5"
+  }
 }
